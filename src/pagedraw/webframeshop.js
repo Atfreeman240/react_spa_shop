@@ -27,7 +27,7 @@ export default class Webframeshop extends React.Component {
                                       </div>
                                   </div>
                                   <div className="webframeshop-1-0-0-0-0-0-2">
-                                      <div className="webframeshop-button-6">
+                                      <div onClick={this.props.addToCart2} className="webframeshop-button-6">
                                           <div className="webframeshop-1-0-0-0-0-0-2-0-0">
                                               <div className="webframeshop-add_to_cart_-0">
                                                   Add to Cart
@@ -56,7 +56,7 @@ export default class Webframeshop extends React.Component {
                                       </div>
                                   </div>
                                   <div className="webframeshop-1-1-0-0-0-0-2">
-                                      <div onClick={this.props.onClick} className="webframeshop-button-0">
+                                      <div onClick={this.props.addToCart} className="webframeshop-button-0">
                                           <div className="webframeshop-1-1-0-0-0-0-2-0-0">
                                               <div className="webframeshop-add_to_cart_-2">
                                                   Add to Cart
@@ -80,7 +80,13 @@ export default class Webframeshop extends React.Component {
                       </div>
                   </div>
                   <div className="webframeshop-2-0-1">
-                      <div className="webframeshop-rectangle_2" /> 
+                      <div className="webframeshop-rectangle_2">
+                          <div className="webframeshop-2-0-1-0-0">
+                              <div className="webframeshop-type_something_-5">
+                                  Type something
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>

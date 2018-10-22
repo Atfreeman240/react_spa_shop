@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import Webframeshop from "./pagedraw/webframeshop";
- 
+import Button from "./pagedraw/button" ;
 class Shop extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      color: 'pink'
+    };
+    this.total = 0.0;
+}     
   render() {
     return (
       <div>
@@ -11,9 +19,33 @@ class Shop extends Component {
           <p>Items that arrive damaged or do not fit can be returned 
             within 60 days.
           </p>
-          <Webframeshop/>
+          <Webframeshop
+           onClick={this.onClick.bind(this)}
+          />
+          <div>
+           <Button  
+           buttonHandler={this.buttonHandler.bind(this)}
+         />
+          </div>
       </div>
     );
+  }
+
+  onClick (){
+    alert("hello shoes!");
+    this.total +=40.00;
+    this.setState({
+      text: "$" + this.total.toFixed(2)
+  
+    });
+  }
+
+  buttonHandler (){
+    alert("hello button!");
+    this.total =0;
+    this.setState({
+      text: "$" + this.total.toFixed(2)
+    });
   }
 }
  
