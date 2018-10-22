@@ -32,7 +32,7 @@ class Shop extends Component {
   }
 
   onClick (){
-    alert("hello shoes!");
+    //alert("Added to cart!");
     this.total +=40.00;
     this.setState({
       text: "$" + this.total.toFixed(2)
@@ -41,7 +41,7 @@ class Shop extends Component {
   }
 
   buttonHandler (){
-    alert("hello button!");
+    alert("You clicked the button!");
     this.total =0;
     this.setState({
       text: "$" + this.total.toFixed(2)
